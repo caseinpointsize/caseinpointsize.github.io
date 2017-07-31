@@ -12,6 +12,7 @@ body{
 	background-repeat: no-repeat;
 	background-size: cover;
 	position: relative;
+	padding: 100px;
 }
 
 .hero-text h1{
@@ -36,25 +37,59 @@ button{
 #square-apply{
 	text-transform: uppercase;
 	background-image: url("../images/apply1.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
 	color: #ffffff;
+	text-align: right;
 } 
 
 #square-donate{
 	text-transform: uppercase;
 	background-image: url("../images/donate2.jpg");	
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
 	color: #ffffff;
+	text-align: right;	
 } 
 
 #square-teach{
 	text-transform: uppercase;
 	background-image: url("../images/teach3.jpg");
-	color: #ffffff;	
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	color: #ffffff;
+	text-align: right;		
 } 
 
 .intro{
 	font-size: 1.5em;
 }
 
-.quote{
+.quote-left{
 	font-family: 'Merriweather', serif;
+	background-color: #e18c36;
+	font-size: 1.5em;
 }
+
+.quote-right{
+	font-family: 'Merriweather', serif;
+	background-color: #e18c36;
+	font-size: 1.5em;
+}
+
+.stat{
+	font-size: 8em;
+	font-weight: 900;
+}
+
+footer{
+	background-color: #3c3c3c;
+	color: #ffffff;
+}
+
