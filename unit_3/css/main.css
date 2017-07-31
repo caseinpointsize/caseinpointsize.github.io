@@ -1,0 +1,17 @@
+body{
+	height: 100%;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.hero-image{
+	text-align: center;
+	background-image: url("../images/mural.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+
+h1{
+	font-size: 72px;
+}

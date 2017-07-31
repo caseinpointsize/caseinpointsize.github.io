@@ -1,0 +1,60 @@
+body{
+	height: 100%;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 17px;
+	line-height: 1.5em;
+}
+
+#hero-image{
+	text-align: center;
+	background-image: url("../images/mural.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+
+.hero-text h1{
+	font-size: 4em;
+	text-transform: uppercase;
+}
+
+.hero-text p{
+	font-family: 'Merriweather', serif;
+	font-weight: 400;
+	font-size: 1.5em;
+}
+
+button{
+	background-color: #f5dc4e;
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+#square-apply{
+	text-transform: uppercase;
+	background-image: url("../images/apply1.jpg");
+	color: #ffffff;
+} 
+
+#square-donate{
+	text-transform: uppercase;
+	background-image: url("../images/donate2.jpg");	
+	color: #ffffff;
+} 
+
+#square-teach{
+	text-transform: uppercase;
+	background-image: url("../images/teach3.jpg");
+	color: #ffffff;	
+} 
+
+.intro{
+	font-size: 1.5em;
+}
+
+.quote{
+	font-family: 'Merriweather', serif;
+}
