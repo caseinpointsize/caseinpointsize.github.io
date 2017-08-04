@@ -1,18 +1,46 @@
 body{
-	height: 100%;
 	font-family: 'Montserrat', sans-serif;
-	font-size: 17px;
-	line-height: 1.5em;
+	font-size: 18px;
+	border: 1px black solid;
+	margin: 0px;
 }
 
+section{
+	background-color: #FFE2B8;
+	border: 1px black solid;
+	padding: 20px;
+}
+
+article{
+	background-color: #E89C6C;
+	border: 1px black solid;
+	padding: 20px;
+}
+
+/*--- NAV ---*/
+nav{
+	background-color: #E8C66A;
+	border: 1px black solid;
+	padding: 20px;
+}
+
+.logo{
+	width: 150px;
+}
+
+/*--- HEADER ---*/
+header{
+	background-color: #FFED74;
+	border: 1px black solid;
+	padding: 20px;
+	color: #ffffff;
+}
 #hero-image{
-	text-align: center;
 	background-image: url("../images/mural.jpg");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 	position: relative;
-	padding: 100px;
 }
 
 .hero-text h1{
@@ -21,75 +49,138 @@ body{
 }
 
 .hero-text p{
+	font-size: 2em;
 	font-family: 'Merriweather', serif;
-	font-weight: 400;
-	font-size: 1.5em;
-}
-
-button{
-	background-color: #f5dc4e;
-	color: white;
-	font-family: 'Montserrat', sans-serif;
-	font-weight: 700;
-	text-transform: uppercase;
-}
-
-#square-apply{
-	text-transform: uppercase;
-	background-image: url("../images/apply1.jpg");
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	position: relative;
-	color: #ffffff;
-	text-align: right;
-} 
-
-#square-donate{
-	text-transform: uppercase;
-	background-image: url("../images/donate2.jpg");	
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	position: relative;
-	color: #ffffff;
-	text-align: right;	
-} 
-
-#square-teach{
-	text-transform: uppercase;
-	background-image: url("../images/teach3.jpg");
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	position: relative;
-	color: #ffffff;
-	text-align: right;		
-} 
-
-.intro{
-	font-size: 1.5em;
-}
-
-.quote-left{
-	font-family: 'Merriweather', serif;
-	background-color: #e18c36;
-	font-size: 1.5em;
-}
-
-.quote-right{
-	font-family: 'Merriweather', serif;
-	background-color: #e18c36;
-	font-size: 1.5em;
-}
-
-.stat{
-	font-size: 8em;
 	font-weight: 900;
 }
 
-footer{
-	background-color: #3c3c3c;
+
+/*--- QUICK NAV ---*/
+
+#quick-nav{
+	width: 960px;
+	margin: 0 auto;
+	text-align: right;
+}
+
+.bottom{
+	font-size: 3em;
+}
+#square-apply{
+	background-image: url("../images/apply1.jpg");
+	width: 33%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	display: block;
+	color: #ffffff;
+	text-transform: uppercase;
+} 
+
+#square-donate{
+	background-image: url("../images/donate2.jpg");	
+	width: 33%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	display: block;
+	color: #ffffff;
+	text-transform: uppercase;	
+} 
+
+#square-teach{
+	background-image: url("../images/teach3.jpg");	
+	width: 33%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	display: block;
+	color: #ffffff;
+	text-transform: uppercase;	
+} 
+
+/*--- INTRO SECTION ---*/
+
+.intro{
+	width: 960px;
+	margin: 0 auto;
+}
+
+/*--- QUOTE SECTION ---*/
+
+.quote-left{
+	width: 50%;
 	color: #ffffff;
 }
+
+#quote-left-image{
+	width: 50%;
+	background-image: url("../images/kaitlen.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+
+.quote-right{
+	width: 50%;
+	color: #ffffff;
+}
+
+#quote-right-image{
+	width: 50%;
+	background-image: url("../images/jose.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+
+#diploma{
+	width: 960px;
+	margin: 0 auto;
+	color: #ffffff;
+}
+
+#diploma h2{
+	color: yellow;
+}
+
+.stat{
+	width: 50%;
+	color: #ffffff;
+}
+
+.stat-number{
+	color: yellow;
+	font-size: 6em;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 900;
+}
+
+/*--- FOOTER ---*/
+
+footer{
+	background-color: #FF957E;
+	border: 1px black solid;
+	padding: 20px;
+	font-size: .75em;
+}
+
+#nav-left{
+	width: 33%;
+}
+
+#nav-mid{
+	width: 33%;
+}
+
+#nav-right{
+	width: 33%;
+}
+
+
 
