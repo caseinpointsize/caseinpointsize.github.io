@@ -1,0 +1,329 @@
+*
+{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body{
+	font-size: 18px;
+	border: 1px black solid;
+	margin: 0px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+section{
+	border: 1px black solid;
+	padding: 0px;
+}
+
+article{
+	border: 1px black solid;
+	padding: 0px;
+}
+
+img{
+	width: 100%;
+	display: block;
+}
+
+nav{
+	border: 1px black solid;
+	padding: 20px;
+
+}
+
+header{
+	border: 1px black solid;
+	padding: 20px;
+}
+
+footer{
+	background-color: #3c3c3c;
+	border: 1px black solid;
+	padding: 40px;
+	color: #ffffff;
+
+}
+
+h2{
+	font-size: 2em;
+}
+
+
+/*--- NAV ---*/
+
+.logo{
+	width: 15%;
+	float: left;
+}
+
+#nav{
+	width: 85%;
+	float: left;
+	padding: 0px;
+}
+
+.main{
+	width: 15%;
+	float: left;
+	display: block;
+}
+
+.nav-button{
+	width: 10%;
+	float: right;
+
+}
+
+/*--- WRAPPER ---*/
+#wrapper{
+	padding: 0px;
+}	
+
+/*--- HEADER ---*/
+
+#hero{
+	padding: 0px;
+}
+
+#hero-image{
+	background-image: url("../images/mural.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	height: 480px;
+}
+
+#hero-text{
+	text-align: center;
+	color: #ffffff;
+}
+
+#hero-text h1{
+	font-weight: 900;
+	font-size: 5em;
+}
+
+#hero-text p{
+	font-family: 'Merriweather', serif;
+	font-size: 2em;
+	margin-bottom: 40px;
+}
+
+/*--- QUICK NAV ---*/
+
+#quick-nav{
+	max-width: 1200px;
+	margin: 0 auto;
+	text-align: right;
+}
+
+#square-apply{
+	background-image: url("../images/apply1.jpg");
+	width: 33%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	display: block;
+	color: #ffffff;
+	text-transform: uppercase;
+	float: left;
+	padding: 10px 20px 90px 20px;
+} 
+
+#square-donate{
+	background-image: url("../images/donate2.jpg");	
+	width: 33%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	display: block;
+	color: #ffffff;
+	text-transform: uppercase;
+	float: left;
+	padding: 10px 20px 90px 20px;
+} 
+
+#square-teach{
+	background-image: url("../images/teach3.jpg");	
+	width: 33%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	display: block;
+	color: #ffffff;
+	text-transform: uppercase;	
+	float: left;
+	padding: 10px 20px 90px 20px;
+} 
+
+
+/*--- INTRO SECTION ---*/
+
+.intro{
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 40px 0px;
+	text-align: center;
+}
+
+button{
+	width: 200px;
+	height: 50px;
+}
+
+/*--- QUOTE SECTION ---*/
+
+#two-column-top{
+	background-color: #e18c36;
+	border: 1px black solid;
+	padding: 0px;
+}
+
+.quote{
+	border: 1px black solid;
+	padding: 20px;
+	float: left;
+	width: 50%;
+	color: #ffffff;
+}
+
+#right-image{
+	border: 1px black solid;
+	padding: 0px;
+	float: left;
+	width: 50%;
+}
+
+#two-column-bottom{
+	background-color: #7e858b;
+	border: 1px black solid;
+	padding: 0px;
+}
+
+#left-image{
+	border: 1px black solid;
+	padding: 0px;
+	float: left;
+	width: 50%;
+}
+
+#two-column-mid{
+	border: 1px black solid;
+	padding: 20px;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+/*--- STAT ---*/
+
+#difference{
+	background-color: #00748b;
+	padding: 40px;
+}
+
+#diploma{
+	max-width: 1200px;
+	margin: 0 auto;
+	color: #ffffff;
+	padding: 20px;
+}
+
+#left-stat{
+	border: 1px black solid;
+	padding: 20px;
+	float: left;
+	width: 50%;
+}
+
+.stat-number{
+	font-size: 8em;
+	color: #f5dc4e;
+	font-weight: 900;
+	text-align: center;
+}
+
+#right-stat{
+	border: 1px black solid;
+	padding: 20px;
+	float: left;
+	width: 50%;
+}
+
+
+.clearfix:after{
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+
+
+
+
+
+/*--- FOOTER ---*/
+#nav-footer{
+	border: 1px black solid;
+	padding: 20px;
+	max-width: 1200px;
+	margin: 0 auto;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+#nav-one{
+	width: 20%;
+	border: 1px black solid;
+	padding: 20px;
+	float: left;
+	text-decoration: none;
+}
+
+#nav-two{
+	width: 20%;
+	border: 1px black solid;
+	padding: 20px;
+	float: left;
+	text-decoration: none;
+}
+
+#nav-three{
+	width: 20%;
+	border: 1px black solid;
+	padding: 20px;
+	float: left;
+	text-decoration: none;
+}
+
+#nav-four{
+	width: 20%;
+	border: 1px black solid;
+	padding: 20px;
+	float: left;
+	text-decoration: none;
+}
+
+#nav-five{
+	width: 20%;
+	border: 1px black solid;
+	padding: 20px;
+	float: left;
+}
+
+#nav-five .logo{
+	float: none;
+	width: 100%;
+}
+#copyright{
+	text-align: center;
+}
+
+
