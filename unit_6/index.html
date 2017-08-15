@@ -5,18 +5,19 @@
 		<link rel="stylesheet" type="text/css" href="css/main.css">
 		<link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Merriweather:400,400i,900,900i" rel="stylesheet">
+		<link rel="stylesheet" href="css/font-awesome.min.css">
 	</head>
 
 
 	<body>
 		<section id="wrapper">		
 			<header class="clearfix">
-
-				<section class="logo">
-					<a href="index.html"><img src="images/excel_color.svg" alt="excel-logo-home"></a>
-				</section>	
-
+				
 				<nav id="nav">
+					<section class="logo">
+						<a href="index.html"><img src="images/excel_color.svg" alt="excel-logo-home"></a>
+					</section>	
+
 					<nav id="main-nav" class="clearfix">
 						<a href="#" class="main">About Us</a>
 					<!--<a href="#" class="dropdown">About Us</a>
@@ -38,9 +39,15 @@
 						<a href="#" class="main">Connect</a>
 					<!--<a href="#" class="dropdown">Blog</a>
 						<a href="#" class="dropdown">Contact Us</a>-->
+						
+  						<a class="list-group-item" href="#"><i class="fa fa-home fa-fw" aria-hidden="true"></i></a>
+  						<a class="list-group-item" href="#"><i class="fa fa-home fa-fw" aria-hidden="true"></i></a>
+  						<a class="list-group-item" href="#"><i class="fa fa-home fa-fw" aria-hidden="true"></i></a>
+  						<a class="list-group-item" href="#"><i class="fa fa-home fa-fw" aria-hidden="true"></i></a>
 
-						<button class="nav-button"><a href="#">Apply</a></button>
-						<button class="nav-button"><a href="#">Donate</a></button>
+
+						<button class="nav-button" id="donate-button"><a href="#">Donate</a></button>
+						<button class="nav-button" id="apply-button"><a href="#">Apply</a></button>
 					</nav>
 				</nav>
 			</header>
@@ -50,27 +57,27 @@
 					<div id="hero-text">
 						<h1>Excel in Life.</h1>
 						<p>Adults can now earn their high school diploma too!</p>
-						<button id="hero-button">Explore</button>
+						<button id="hero-button"><a href="#">Explore</a></button>
 					</div>
 				</section>	
 			</header>
 
 			<nav id="quick-nav" class="clearfix">
-					<a href="#" id="square-apply">Take the first step<br>Apply</a>
-					<a href="#" id="square-donate">Support our Programs<br>Donate</a>
-					<a href="#" id="square-teach">Transform a Life<br>Teach</a>
+					<a href="#" class="square" id="square-apply">Take the first step<br><h2>Apply</h2></a>
+					<a href="#" class="square" id="square-donate">Support our Programs<br><h2>Donate</h2></a>
+					<a href="#" class="square" id="square-teach">Transform a Life<br><h2>Teach</h2></a>
 					
 			</nav>
 			
 			<section>
 				<article class="intro">
-					<h2>Excel in Learning. Excel in Life.</h2>
+					<h3>Excel in Learning. Excel in Life.</h3>
 					<p>Welcome to The Goodwill Excel Center. It’s the first free public charter high school in Texas that provides adults ages 17-50 the opportunity to earn their high school diploma, complete an in-demand professional certification, and begin post-secondary education.</p>
 					<button>Learn More</button>
 				</article>
 
 				<section id="two-column-top" class="clearfix">
-					<article class="quote">
+					<article class="quote" id="left">
 						<p><span>“</span><br>I found a place where no matter where you come from, what your background is, what you’ve been through – Goodwill opens their arms and helps you…there are no closed doors, and they never let you fail.<br>
 						--Kaitlen<br>
 						<a href="https://www.goodwillcentraltexas.org/about-us/kaitlen">Read Kaitlen's story</a></p>
@@ -83,7 +90,7 @@
 
 				<section id="difference">
 					<article id="diploma">
-						<h2>The Diploma Difference</h2>
+						<h3>The Diploma Difference</h3>
 						<p class="difference">What a difference a diploma makes. By completing high school and receiving your diploma, did you know that you will incrase your earning power by up to $400,000 over your lifetime? Education really does make an impact on getting the job, salary, and career that you want.</p>
 					</article>
 
@@ -100,7 +107,6 @@
 							<p class="stat-par">Children of parents that have earned their high school diploma are 50% more likely to complete their high school education.</p>
 						</article>
 					</section>
-
 				</section>
 
 				<section id="two-column-bottom" class="clearfix">
@@ -116,7 +122,7 @@
 				</section>
 
 				<article class="intro">
-					<h2>Ready to Take the First Step?</h2>
+					<h3>Ready to Take the First Step?</h3>
 					<p>If you're reading this, you've already taken the first step to changing your life and the life of your family. You want to complete your high school education - The Goodwill Excel Center helps you make it possible.</p>
 			
 					<article class="button-step">
@@ -130,7 +136,7 @@
 
 			<footer>
 				<nav id="nav-footer" class="clearfix">
-					<article id="nav-one">
+					<article class="nav-footer-bucket" id="nav-one">
 						<a href="#">About Us</a><br>
 						<a href="#">About Us</a><br>
 						<a href="#">Leadership and Governing Board</a><br>
@@ -138,7 +144,7 @@
 						<a href="#">Reporting and Required Notices</a>
 					</article>
 
-					<article id='nav-two'>
+					<article class="nav-footer-bucket" id="nav-two">
 						<a href="#">Academics</a><br>
 						<a href="#">The Goodwill Excel Center</a><br>
 						<a href="#">The Goodwill Career and Technical Academy</a><br>
@@ -147,7 +153,7 @@
 						<a href="#">FAQ</a>
 					</article>						
 
-					<article id="nav-three">
+					<article class="nav-footer-bucket" id="nav-three">
 						<a href="#">Student Life</a><br>
 						<a href="#">Experience</a><br>
 						<a href="#">Calendar</a><br>
@@ -156,13 +162,13 @@
 						<a href="#">Student Handbook</a>
 					</article>
 
-					<article id="nav-four">
+					<article class="nav-footer-bucket" id="nav-four">
 						<a href="#">Connect</a><br>
 						<a href="#">Blog</a><br>
 						<a href="#">Contact Us</a><br>
 					</article>
 				
-					<section id="nav-five" class="clearfix">
+					<section class="nav-footer-bucket" id="nav-five" class="clearfix">
 						<article class="logo">
 							<a href="index.html"><img src="images/excel_white.svg" alt="white excel logo"></a>
 						</article>
