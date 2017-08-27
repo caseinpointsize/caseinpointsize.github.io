@@ -54,11 +54,17 @@ footer{
 	background-color: #3c3c3c;
 }
 
+hr{
+	display: none;
+}
+
 /*------------- NAVIGATION -------------*/
 
 #menu{
 	margin: 0px auto;
-	width: 85%;
+	width: 100%;
+	max-width: 1440px;
+	/*width: 85%;*/
 }
 
 #menu-logo{
@@ -128,15 +134,30 @@ footer{
 	border-bottom: 4px solid #e18c36;
 }
 
+#search-button:hover{
+	background-color: #c97c36;
+	border-bottom: 4px solid #c97c36;
+}
+
 #donate-button{
 	background-color: #718b2c;
 	border-bottom: 4px solid #718b2c;
+}
+
+#donate-button:hover{
+	background-color: #576823;
+	border-bottom: 4px solid #576823;
 }
 
 #apply-button{ 
 
 	background-color: #00748b;
 	border-bottom: 4px solid #00748b; 
+}
+
+#apply-button:hover{
+	background-color: #005c68;
+	border-bottom: 4px solid #005c68;
 }
 
 /*------------- HERO IMAGE -------------*/
@@ -240,8 +261,10 @@ footer{
 /*------------- BODY-CONTENT -------------*/
 
 #body-content{
-	width: 85%;
+/*	width: 85%;*/
 	margin: 0 auto;
+	width: 90%;
+	max-width: 1440px;
 	padding: 60px 0px;
 }
 
@@ -288,7 +311,7 @@ footer{
 
 .intro{
 	margin: 0 auto;
-	padding: 70px 40px;
+	padding: 60px 40px;
 	text-align: center;
 }
 
@@ -315,7 +338,7 @@ footer{
 .byline{
 	font-style: italic;
 	font-weight: 300;
-	font-size: 1.75em;
+	font-size: 1.5em;
 	line-height: 1.75em;
 	text-align: right;
 }
@@ -336,11 +359,11 @@ footer{
 	margin-top: 25px;
 }
 
-/*.quote-full{
-    width: 85%;
-    padding: 50px 0px;
-    margin: 0 auto;
-}*/
+.quote-full{
+/*    width: 95%;*/
+    padding: 10px 0px;
+/*    margin: 0 auto;*/
+}
 
 /*------------- QUOTE ONE -------------*/
 
@@ -356,7 +379,7 @@ footer{
 	width: 50%;
 	color: #ffffff;
 /*	margin: 0 auto;*/
-	padding: 40px;
+	padding: 2em;
 	height: 500px; /*Ask if this correct vs a vheight*/
 	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 	border: 2px red solid;
@@ -452,13 +475,15 @@ footer{
 /*------------- FOOTER -------------*/
 
 #footer-top{
-	width: 85%;
-	padding: 60px 40px;
+	margin: 0px auto;
+	width: 90%;
+	max-width: 1440px;
+/*	width: 85%;*/
+	padding-bottom: 60px;
 	color: #ffffff;
-	margin: 0 auto;
+/*	margin: 0 auto;*/
 	text-align: center;
 }
-
 
 
 #footer-contact{
@@ -473,9 +498,9 @@ footer{
 }
 
 #footer-cta{
-	padding: 0px 0px 40px 0px;
+/*	padding: 0px 0px 40px 0px;*/
 	border-bottom: 1px #ffffff solid;
-	margin-bottom: 40px;
+	margin-bottom: 60px;
 }
 
 #contact-left{
@@ -509,9 +534,12 @@ footer{
 /*------------- FOOTER BOTTOM -------------*/
 
 #footer-wrapper{
-	width: 85%;
+	margin: 0px auto;
+	width: 90%;
+	max-width: 1440px;
+/*	width: 85%;*/
 	color: #ffffff;
-	margin: 0 auto;
+/*	margin: 0 auto;*/
 }
 
 #footer-bottom{
@@ -542,38 +570,285 @@ footer{
 
 /*------------- RESPONSIVE -------------*/
 
-/*#mobile-menu{
+#mobile-menu{
 	display: none;
-}*/
+}
+
+#two-column-top-1024{
+	display: none;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+	width: 100%;
+	float: none;
+	}
+
+#two-column-bottom-1024{
+	display: none;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+	width: 100%;
+	float: none;
+	}
+
+
+@media screen and (max-width: 1440px) {
+
+	#nav-full{
+/*		display: none;*/
+		border: 2px orange solid;
+	}
+
+	.quote{
+		font-size: 1.5em;	
+	}
+
+	.byline{
+		font-size: 1.6em;
+	}
+
+	.quote-full{
+		padding: 20px 0px;
+	}	
+}
 
 @media screen and (max-width: 1280px) {
-/*	#mobile-menu{
-		display: block;
-	}
-*/
+
 	#nav-full{
 /*		display: none;*/
 		border: 2px blue solid;
 	}
 
-}
-/*
-@media screen and (max-width: 1024px) {
+	#contact-middle{
+		padding: 20px 40px;
+	}
+
+	#footer-cta{
+		width: 95%;
+		border-bottom: none;
+		margin-bottom: 0px;
+	}
+
+	#footer-contact{
+		border-top: 1px #ffffff solid;
+		padding-top: 60px;
+	}
+
+	#hero-text p{
+		font-size: 1.4em;
+	}
+
+	.square{
+		padding: 20px 20px 70px 20px;
+	}
+
+	h2{
+		font-size: 3em;	
+	}
+
+	.quote-button{
+		margin-top: 0px;
+	}
+
+	.quote-full{
+		padding: 5px 0px;
+	}
+}	
+
+@media screen and (max-width: 1100px) {
+
 	#mobile-menu{
 		display: block;
+		border: 2px brown solid;
+		text-align: right;
+		width: 90%;
+		margin: 0 auto;
+		padding: 20px 0px;
 	}
 
 	#nav-full{
 		display: none;
+		border: 2px purple solid;
 	}
+
+	.square{
+		padding: 20px 20px 70px 20px;
+	}
+
+	h1{
+		font-size: 4em;
+	}
+
+	h2{
+		font-size: 3em;	
+	}
+
+	#quick-nav a{
+		font-size: .80em;
+		line-height: 1em;
+	}
+
+	#two-column-top{
+		display: none;
+	}
+
+	#two-column-top-1024{
+		width: 100%;
+		display: block;
+	}
+
+	#right-image{
+		background-image: url("../images/kaitlen.jpg");
+		float: none; 
+		box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+		width: 100%;
+		display: block;
+	}
+
+/*	.quote-full{
+		padding: 3em;
+	}*/
+
+	#right-image:after{
+		content: "";
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(225, 140, 54, 0.8);
+		z-index: 1;
+	}
+
+	.quote-full{
+		text-align: left;
+		position: absolute;
+		color: #ffffff;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		z-index: 2;
+		width: 80%;
+	}
+
+	#two-column-bottom{
+		display: none;
+	}
+
+	#two-column-bottom-1024{
+		width: 100%;
+		display: block;
+	}
+
+	#left-image{
+		background-image: url("../images/jose.jpg");
+		float: none; 
+		box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+		width: 100%;
+		display: block;
+	}
+
+/*	.quote-full{
+		padding: 3em;
+	}*/
+
+	#left-image:after{
+		content: "";
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 116, 139, 0.8);
+		z-index: 1;
+	}
+
+	.stat{
+		padding: 0px 0px;
+	}
+
+	.stat-par{
+		padding: 0px 40px;
+	}
+
+	#contact-middle{
+		padding: 40px 40px;
+	}
+
+	#footer-bottom a{
+		padding: 10px 10px;
+	}
+
+	#copyright{
+		float: none;
+	}
+
+	#social{
+		float: none;
+		text-align: center;
+	}
+
+	.intro{
+		padding: 60px 40px 40px 40px;
+
+	}
+
+}
+/*	.quote-top{
+		float: left;
+		width: 100%;
+	}*/
+
+/*	#right-image{
+	background-image: url("../images/kaitlen.jpg");
+	float: none; 
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+	width: 100%;
+	}*/
+/*
+#flat-quote-top{
+	background-color: #af6b2e;
+	box-shadow: none;
+	width: 65%;
+}
+
+
+
+#two-column-bottom{
+	padding-top: 60px;
+}
+
+.quote-bottom{
+	background-color: #00748b;
+	float: right;
+	width: 50%;
+	color: #ffffff;
+	padding: 40px;
+	height: 500px;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+#flat-quote-bottom{
+	background-color: #013f47;
+	box-shadow: none;
+	width: 65%;
+}
+
+#left-image{
+	background-image: url("../images/jose.jpg");
+	float: left;
+}*/
+	
 
 @media screen and (max-width: 768px) {
-	#mobile-menu{
-		display: block;
-	}
 
 	#nav-full{
-		display: none;
+		border: 2px green solid;
+	}
+
+	#body-content{
+		border: 2px green solid;
+		width: 100%;
+		padding: 0px 0px 60px;
 	}
 
 	.column{
@@ -587,6 +862,66 @@ footer{
 	}
 
 	.square{
+		display: block;
+		padding: 20px 20px 40px 20px;
+		box-shadow: none;
+	}
+
+	h3{
+		font-size: 2.5em;
+		line-height: 1em;
+	}
+
+	.icons{
+		width: 35%;
+    	margin: auto;
+    	float: left;
+    	padding-right: 20px;
+	}
+
+	.stat{
+		float: none;
+		width: 100%;
+		padding: 0px 40px;
+		text-align: left;
+	}
+
+	.stat-number{
+		font-size: 3.5em;
+		line-height: 1em;
+	}
+
+	hr{
+		display: block;
+		margin: 40px 0px;
+	}
+
+	.contact{
+		float: none;
+		width: 100%;
+	}
+
+	.contact a{
+		display: inline-block;
+	}
+
+	#contact-left a{
+		display: inline-block;
+		padding: 0px 20px;
+	}
+
+	#contact-middle{
+		border: none;
+	}
+
+	#footer-bottom{
+		text-align: center;
+	}
+}
+/*	
+
+	
+.square{
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: cover;
@@ -598,22 +933,69 @@ footer{
 		text-decoration: none;
 		box-shadow: none;
 	}
-
-
-
-
-
-}
+	
+*/
 
 @media screen and (max-width: 480px) {
-	#mobile-menu{
-		display: block;
+
+	body{
+		font-size: 18px;
+		line-height: 1.5em;
+	}
+
+	#menu-logo{
+		width: 50%;
 	}
 
 	#nav-full{
-		display: none;
+		border: 2px red solid;
 	}
 
+	#quick-nav{
+		width: 100%;
+		margin: 0 auto;
+		padding: 0px 0px 0px 0px;
+	}
 
+	h1{
+		font-size: 3.75em;
+	}
 
-}*/
+	h3{
+		font-size: 2em;
+		line-height: 1em;
+	}
+
+	#flat-quote-top{
+		width: 80%;
+	}
+
+	#flat-quote-bottom{
+		width: 80%;
+	}
+
+	.icons{
+		width: 40%;
+    	float: none;
+	}
+
+	.stat{
+		text-align: center;
+		padding: 0px 0px;
+	}
+
+	.stat-number{
+		font-size: 3.5em;
+		line-height: 1em;
+	}
+
+	.stat-par{
+		clear: both;
+		text-align: center;
+	}
+
+}
+
+@media screen and (max-width: 360px) {
+
+}
