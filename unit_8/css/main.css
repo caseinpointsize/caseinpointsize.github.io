@@ -370,7 +370,6 @@ hr{
 #two-column-top{
 /*	padding: 0px;*/
 /*	margin: 0 auto;*/
-	border: 2px orange solid;
 }
 
 .quote-top{
@@ -382,7 +381,6 @@ hr{
 	padding: 2em;
 	height: 500px; /*Ask if this correct vs a vheight*/
 	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-	border: 2px red solid;
 }
 
 #flat-quote-top{
@@ -426,7 +424,6 @@ hr{
 
 #two-column-mid{
 	text-align: center;
-	border: 2px cyan solid;
 }
 
 /*#difference{
@@ -445,7 +442,6 @@ hr{
 	padding: 0px 40px;
 	float: left;
 	width: 50%;
-	border: 2px blue solid;
 /*	text-align: center;*/
 }
 
@@ -596,7 +592,6 @@ hr{
 
 	#nav-full{
 /*		display: none;*/
-		border: 2px orange solid;
 	}
 
 	.quote{
@@ -616,7 +611,6 @@ hr{
 
 	#nav-full{
 /*		display: none;*/
-		border: 2px blue solid;
 	}
 
 	#contact-middle{
@@ -659,7 +653,6 @@ hr{
 
 	#mobile-menu{
 		display: block;
-		border: 2px brown solid;
 		text-align: right;
 		width: 90%;
 		margin: 0 auto;
@@ -847,7 +840,6 @@ hr{
 @media screen and (max-width: 909px) {
 
 	#body-content{
-		border: 2px green solid;
 		width: 100%;
 		padding: 0px 0px 60px;
 	}
