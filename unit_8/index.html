@@ -11,7 +11,59 @@
 
 	<body>
 		<section id="wrapper">
-			<header id="menu">
+			<nav id="nav-container">
+				<ul id="nav-primary">
+					<a href="index.html"><img src="images/excel_color.svg" id="nav-logo" alt="excel-logo-home"></a>
+		
+  					<a href="index.html" class="dropdown">Home</a>
+
+  					<ul class="dropdown">About Us
+  						<li>
+  							<a href="#">About Us</a>
+    						<a href="#">Leadership and Governing Board</a>
+    						<a href="#">Faculty and Staff</a>
+    						<a href="#">Reporting and Required Notices</a>
+    					</li>
+  					</ul>
+
+  					<ul class="dropdown">Academics
+  						<li>
+  							<a href="#">The Goodwill Excel Center</a>
+    						<a href="#">The Goodwill Career and Technical Academy</a>
+    						<a href="#">GED Program</a>
+    						<a href="#">Graduate Opportunities</a>
+    						<a href="#">FAQ</a>
+  						</li>
+  					</ul>
+
+  					<ul class="dropdown">Student Life
+  						<li>
+    						<a href="#">Experience</a>
+    						<a href="#">Calendar</a>
+    						<a href="#">Bell Schedule</a>
+    						<a href="#">Student Guide</a>
+    						<a href="#">Student Handbook</a>
+  						</li>
+  					</ul>	
+ 				
+ 					<ul class="dropdown">Connect
+ 						<li>
+    						<a href="#">Blog</a>
+    						<a href="#">Contact Us</a>
+    					</li>
+    				</ul>	
+	
+
+ 					<ul id="nav-action">
+						<li>
+							<a href="#" class="nav-button" id="search-button"><i class="fa fa-search" aria-hidden="true"></i></a>
+							<a href="#" class="nav-button" id="donate-button">Donate</a>
+							<a href="#" class="nav-button" id="apply-button">Apply</a>
+						</li>
+					</ul>	
+				</ul>
+			</nav>		
+<!-- 			<header id="menu">
 				<a id="menu-logo" href="index.html">
 					<img src="images/excel_color.svg" alt="excel-logo-home">
 				</a>
@@ -59,7 +111,7 @@
 						<a href="contact.html" class="dropdown">Contact Us</a> 
 				</div>
 
-			</header>
+			</header> -->
 
 			<header id="hero">
 				<section id="hero-image">
@@ -73,11 +125,17 @@
 			</header>
 
 			<section id="body-content">
-				<section id="quick-nav" class="clearfix">
+				<div id="quick-nav" class="clearfix">
 					<a href="#" class="square column" id="square-apply">Take the first step<br><h2>Apply</h2></a>
 					<a href="#" class="square column" id="square-donate">Support our Programs<br><h2>Donate</h2></a>
 					<a href="#" class="square column" id="square-teach">Transform a Life<br><h2>Teach</h2></a>
-				</section>
+				</div>	
+						
+				<!-- <section id="quick-nav" class="clearfix">
+					<a href="#" class="square column" id="square-apply">Take the first step<br><h2>Apply</h2></a>
+					<a href="#" class="square column" id="square-donate">Support our Programs<br><h2>Donate</h2></a>
+					<a href="#" class="square column" id="square-teach">Transform a Life<br><h2>Teach</h2></a>
+				</section> -->
 			
 				<article class="intro">
 					<h3>Excel in Learning. Excel in Life.</h3>
@@ -243,6 +301,21 @@
 		</section>
 
 		<script type="text/javascript">
+		// A $( document ).ready() block.
+		$( document ).ready(function() {
+    		console.log( "ready!" );
+    	$( "#mobile-menu" ).click(function() {
+  			//alert( "Handler for .click() called." );
+  		$("#mobile-nav").slideToggle();
+			});
+		});
+
+		$(".dropdown").hover(function(){
+			$(this).find("li").slideToggle();
+		});
+
+		</script>
+		<!-- <script type="text/javascript">
 			// A $( document ).ready() block.
 				$( document ).ready(function() {
     				console.log( "ready!" );
@@ -252,6 +325,6 @@
 						});
 				});
 
-		</script>
+		</script> -->
 	</body>
 </html>
