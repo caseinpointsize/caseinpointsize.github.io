@@ -467,7 +467,7 @@ input[type=text]:focus {
 
 .intro{
 	margin: 0 auto;
-	padding: 40px 0px 60px 0px;
+	padding: 40px 40px 60px 40px;
 	text-align: center;
 	max-width: 1024px;
 }
@@ -870,7 +870,7 @@ input[type=text]:focus {
 	}
 
 	h1{
-		font-size: 4em;
+		/*font-size: 4em;*/
 	}
 
 	#hero-text p{
@@ -936,6 +936,10 @@ input[type=text]:focus {
 
 	#body-content{
 		padding: 0px;
+	}
+
+	h1{
+		font-size: 4em;
 	}
 
 	/*#quick-nav{
