@@ -755,6 +755,21 @@ input[type=text]:focus {
 		display: none;
 	}
 
+.overlay {
+	display: none;
+    	height: 0%;
+   		width: 100%;
+   		position: fixed;
+   		z-index: 500;
+    	top: 0;
+    	left: 0;
+    	background-color: rgb(0, 116, 139);
+    	background-color: rgba(255, 255, 255, 0.95);
+    	overflow-y: hidden;
+    	transition: 0.5s;
+/*    	border: 2px yellow solid;*/
+		padding-top: 110px; 
+	}
 
 /*.dropdown-mobile {
     float: left;
@@ -825,31 +840,20 @@ input[type=text]:focus {
 	}
 
 	.overlay {
-    	height: 0%;
-   		width: 100%;
-   		position: fixed;
-   		z-index: 500;
-    	top: 0;
-    	left: 0;
-    	background-color: rgb(0, 116, 139);
-    	background-color: rgba(255, 255, 255, 0.95);
-    	overflow-y: hidden;
-    	transition: 0.5s;
-/*    	border: 2px yellow solid;*/
-		padding-top: 110px; 
+		display: block;
 	}
 
 	#overlay-content {
     	position: relative;
-    	top: 15%;
+    	top: 0;
     	width: 100%;
     	text-align: center;
-    	margin-top: 30px;
+    	margin-top: 0px;
 	}
 
 	.overlay a {
     	padding: 20px;
-    	font-size: 1.5em;
+/*    	font-size: 1.5em;*/
     	text-decoration: none;
 		/*    font-size: 36px;*/
     	/*color: #ffffff;*/
@@ -919,7 +923,7 @@ input[type=text]:focus {
 		width: 100%;
 		color: #ffffff;
 		margin: 0 auto;
-		padding: 3em 12em;
+		padding: 3em 8em;
 		box-shadow: none;
 		background-color: rgba(225, 140, 54, 0.8);
 	}
@@ -945,7 +949,7 @@ input[type=text]:focus {
 		width: 100%;
 		color: #ffffff;
 		margin: 0 auto;
-		padding: 3em 12em;
+		padding: 3em 8em;
 		box-shadow: none;
 		background-color: rgba(0, 116, 139, 0.8);
 	}
@@ -965,6 +969,50 @@ input[type=text]:focus {
 		width: 100%;
 		display: block;
 	}
+
+	/* Style the buttons that are used to open and close the accordion panel */
+button.accordion {
+    background-color: rgba(0, 116, 139, 0.8);
+    color: #ffffff;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+ 	text-align: center;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+button.accordion:hover {
+    background-color: rgba(0, 116, 139,0.8);
+}
+
+/* Style the accordion panel. Note: hidden by default */
+div.panel {
+/*    padding: 0 18px;*/
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.panel a{
+	display: block;
+}
+
+/*button.accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+button.accordion.active:after {
+    content: "\2212";
+}*/
 
 /*	#right-image:after{
 		content: "";
@@ -1225,11 +1273,35 @@ input[type=text]:focus {
 	#body-content{
 		padding: 0px;
 	}
+}	
 
-	h1{
-		font-size: 4em;
+@media screen and (max-width: 912px) {
+
+	.column{
+		width: 100%;
 	}
 
+	#quick-nav{
+		width: 100%;
+		margin: 0 auto;
+		padding: 0px 0px 40px 0px;
+		box-shadow: none;
+		transform: translate(0%, 0%);
+	}
+
+	.square{
+		display: block;
+		padding: 20px 20px 20px 20px;
+		box-shadow: none;
+	}
+
+
+
+}
+/*	h1{
+		font-size: 4em;
+	}
+*/
 	/*#quick-nav{
 		width: 100%;
 		margin: 0 auto;
@@ -1373,8 +1445,8 @@ input[type=text]:focus {
 
 	}
 */
-}
 
+/*
 @media screen and (max-width: 916px) {	
 	.square{
 		display: block;
@@ -1409,7 +1481,7 @@ input[type=text]:focus {
 		background-color: rgba(0, 116, 139, 0.8);
 		z-index: 1;
 	}
-}
+}*/
 /*	.quote-top{
 		float: left;
 		width: 100%;
@@ -1556,9 +1628,103 @@ input[type=text]:focus {
 	}*/
 	
 
-/*
-@media screen and (max-width: 480px) {
 
+@media screen and (max-width: 480px) {
+	#hero-image{
+    background-image: url("../images/mural.jpg");
+    height: 0;
+    padding: 75% 0%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+/*    background-size: 100% auto;*/
+    position: relative;
+	}
+
+#hero-text{
+	text-align: center;
+	position: absolute;
+	color: #ffffff;
+	top: 55%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 2;
+	width: 75%;
+}
+
+#hero-text p{
+	margin-bottom: 20px;
+	font-size: 2em;
+	line-height: 1.25em;
+}
+
+#hero-image:after{
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.6);
+	z-index: 1;
+}
+
+.hero-button{
+	width: 250px;
+	transition: all 0.5s;
+  	cursor: pointer;
+  	border: none;
+  	text-align: center; 
+  	padding: 15px; 	
+	border-radius: 30px;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+	margin: 5px;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+#hero-button-left{
+	background-color: #e18c36; 
+}
+
+#hero-button-right{
+	background-color: #00748b; 
+}
+
+.hero-button a{
+	text-decoration: none;
+	color: #ffffff;
+}
+
+.hero-button span{
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+  color: #ffffff;
+}
+
+.hero-button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.hero-button:hover span {
+	padding-right: 25px;
+}
+
+.hero-button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+}
+
+/*
 	body{
 		font-size: 18px;
 		line-height: 1.5em;
@@ -1615,4 +1781,4 @@ input[type=text]:focus {
 		text-align: center;
 	}
 
-}*/
+*/

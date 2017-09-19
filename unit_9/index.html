@@ -136,9 +136,9 @@
     				<button class="dropbtn-mobile" id="teal"><span onclick="openNav()"><i class="fa fa-bars" aria-hidden="true"></i></span></button>
     			</ul>	
     		</ul>		
-		</nav>
+	</nav>
 
-		<nav class="overlay" id="myNav">
+<!-- 		<nav class="overlay" id="myNav">
 			<div id="overlay-content">
      		<a href="about.html">About Us</a>
       		<a href="#">Academics</a>
@@ -148,7 +148,48 @@
 			<a href="apply.html">Apply Today</a>
 			<a href="javascript:void(0)" onclick="closeNav()" id="close">Close</a>
 			</div>
-  		</nav>
+  		</nav> -->
+  		<nav class="overlay" id="myNav">
+  		<div id="overlay-content">
+          <button class="accordion">Home</button>
+          <button class="accordion">About Us</button>
+            <div class="panel">
+              <a href="about.html">About Us</a>
+              <a href="#">Leadership and Governing Board</a>
+              <a href="#">Faculty and Staff</a>
+              <a href="#">Reporting and Required Notices</a>
+            </div>
+
+          <button class="accordion">Academics</button>
+            <div class="panel">
+              <a href="#">The Goodwill Excel Center</a>
+              <a href="#">The Goodwill Career and Technical Academy</a>
+              <a href="#">GED Program</a>
+              <a href="#">Graduate Opportunities</a>
+              <a href="#">FAQ</a>
+            </div>
+
+          <button class="accordion">Student Life</button>
+            <div class="panel">
+              <a href="#">Experience</a>
+              <a href="#">Calendar</a>
+              <a href="#">Bell Schedule</a>
+              <a href="#">Student Guide</a>
+              <a href="#">Student Handbook</a>
+            </div>
+
+          <button class="accordion">Connect</button>
+            <div class="panel">
+              <a href="#">Blog</a>
+              <a href="#">Contact Us</a>
+            </div>
+          <button class="accordion">Donate</button>
+          <button class="accordion">Apply</button>
+          <button class="accordion"><a href="javascript:void(0)" onclick="closeNav()">Close</a></button>
+            </div>
+            </nav>
+</div>
+</nav>
 
 			<header id="hero">
 				<section id="hero-image">
@@ -377,16 +418,10 @@
   						//alert( "Handler for .click() called." );
   					$(".dropdown-content-mobile").slideToggle();
 				});
-
-
-
     			// $(window).load(function(){
      	 //  			$("#nav-container-mobile").sticky({ topSpacing: 0 });
     			// });
     		});
-    				
-
-			
   		</script>
 
   		<script>
@@ -396,6 +431,23 @@ function openNav() {
 
 function closeNav() {
     document.getElementById("myNav").style.height = "0%";
+}
+</script>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].onclick = function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  }
 }
 </script>
 </html>
