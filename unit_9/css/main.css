@@ -34,6 +34,7 @@ h2{
 
 h3{
 	font-size: 2em;
+	line-height: 1em;
 	color: #e18c36;	
 	text-transform: uppercase;
 	margin-bottom: 20px;
@@ -411,7 +412,7 @@ input[type=text]:focus {
 #body-content{
 	max-width: 1280px;
 	margin: 0 auto;
-	padding: 0px 40px 40px 40px;
+	padding: 0px 40px 0px 40px;
 }
 
 /*------------- QUICK NAV -------------*/
@@ -454,7 +455,6 @@ input[type=text]:focus {
 	float: left;
 	padding: 20px 20px 75px 20px;
 	text-decoration: none;
-
 }
 
 .square:hover{
@@ -513,9 +513,12 @@ input[type=text]:focus {
 
 .image{
 	width: 50%;
-/*	height: 450px;*/
+/*	height: 400px;*/
 	float: left;
 	margin-top: 30px;
+	position: relative;
+	transform: translate(0%, 3%);
+
 }
 
 .quote-bottom{
@@ -523,10 +526,11 @@ input[type=text]:focus {
 	float: right;
 	width: 50%;
 	color: #ffffff;
-	margin: 0 auto;
+/*	margin: 0 auto;*/
 	padding: 5em 3em;
 /*	height: 500px;*/
 	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+	margin-bottom: 40px;
 }
 
 #quote-top-button{
@@ -771,6 +775,9 @@ input[type=text]:focus {
 		padding-top: 110px; 
 	}
 
+#quick-nav-720{
+		display: none;
+	}
 /*.dropdown-mobile {
     float: left;
     overflow: hidden;
@@ -809,7 +816,13 @@ input[type=text]:focus {
 /*.dropdown-mobile:hover .dropdown-content-mobile {
     display: block;
 }*/
-	
+@media screen and (max-width: 1280) {
+
+	#center{
+		position: relative;
+		transform: translate(0%, -75%);
+	}
+}	
 
 @media screen and (max-width: 1195px) {
 
@@ -922,7 +935,7 @@ input[type=text]:focus {
 		float: none;
 		width: 100%;
 		color: #ffffff;
-		margin: 0 auto;
+/*		margin: 0 auto;*/
 		padding: 3em 8em;
 		box-shadow: none;
 		background-color: rgba(225, 140, 54, 0.8);
@@ -948,7 +961,6 @@ input[type=text]:focus {
 		float: none;
 		width: 100%;
 		color: #ffffff;
-		margin: 0 auto;
 		padding: 3em 8em;
 		box-shadow: none;
 		background-color: rgba(0, 116, 139, 0.8);
@@ -1277,14 +1289,6 @@ button.accordion.active:after {
 	#hero-image{
     	padding-bottom: 70%;
 	}
-}	
-
-@media screen and (max-width: 912px) {
-
-	/*#quick-nav h2{
-		font-size: 2em;	
-		line-height: .85em;
-	}*/
 
 	#quick-nav a{
 		font-size: .75em;
@@ -1294,14 +1298,112 @@ button.accordion.active:after {
     	padding-bottom: 70%;
 	}
 
+	.square{
+		padding: 20px 20px 40px 20px;
+	}
+
+	
+}	
+
+@media screen and (max-width: 768px) {
+
 	#hero-text p{
 		font-size: 1.25em;
 	}
 
-}
-/*	h1{
+	h1{
 		font-size: 4em;
 	}
+
+	.icons{
+		width: 35%;
+    	margin: auto;
+    	float: left;
+    	padding-right: 20px;
+	}
+
+	.stat{
+		float: none;
+		width: 100%;
+		padding: 0px 40px;
+		text-align: left;
+	}
+
+	.stat-number{
+		font-size: 3.5em;
+		line-height: 1em;
+	}
+
+	hr{
+		display: block;
+		margin: 40px 40px;
+	}
+
+	#contact-left{
+		display: none;
+		/*float: none;
+		width: 100%;
+		padding-bottom: 40px; */
+	}
+
+	#contact-left a{
+		display: inline-block;
+		padding: 0px 20px;
+	}
+
+
+/*	.contact{
+		float: none;
+		width: 100%;
+	}
+
+	
+.contact a{
+		display: inline-block;
+	}
+	*/
+
+	#social{
+		float: none;
+		text-align: center;
+	}
+
+	#contact-middle{
+		float: none;
+		margin: 0 auto;
+		padding: 0px 0px;
+		border: none;
+	}
+
+	#contact-right{
+		float: none;
+		width: 100%;
+		margin-top: 40px;
+	}
+
+	#copyright{
+	float: none;
+	text-align: center;
+}
+	/*#quick-nav h2{
+		font-size: 2em;	
+		line-height: .85em;
+	}*/
+
+/*	#quick-nav a{
+		font-size: .75em;
+	}
+
+	#hero-image{
+    	padding-bottom: 70%;
+	}
+
+	#hero-text p{
+		font-size: 1.25em;
+	}*/
+
+}
+/*	
 */
 	/*#quick-nav{
 		width: 100%;
@@ -1446,6 +1548,50 @@ button.accordion.active:after {
 
 	}
 */
+
+@media screen and (max-width: 720px) {	
+
+	#quick-nav{
+		display: none;
+	}
+
+	#quick-nav-720{
+		display: block;
+	}
+
+	.column{
+		width: 100%;
+		display: none;
+	}
+
+	.square{
+		display: block;
+		padding: 20px 20px 20px 20px;
+/*		box-shadow: none;*/
+	}
+
+	#quick-nav-720{
+/*		width: 100%;
+		margin: 0 auto;*/
+		padding: 0px;
+		box-shadow: none;
+		transform: translate(0%, 0%);
+	}
+
+	#quick-nav-720 h2{
+		font-size: 1.5em;
+		line-height: 1.25em;
+		text-align: center;
+	}
+
+	.quote-top{
+		padding: 3em 3em;
+	}
+
+	.quote-bottom{
+		padding: 3em 3em;
+	}
+}
 
 /*
 @media screen and (max-width: 916px) {	
@@ -1631,14 +1777,24 @@ button.accordion.active:after {
 
 
 @media screen and (max-width: 480px) {
-	#hero-image{
+
+	#quick-nav-720 h2{
+		font-size: 1.25em;
+		line-height: 1.25em;
+		text-align: center;
+	}
+
+	h1{
+		font-size: 3em;
+	}
+/*	#hero-image{
     background-image: url("../images/mural.jpg");
     height: 0;
     padding: 75% 0%;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-/*    background-size: 100% auto;*/
+   background-size: 100% auto;
     position: relative;
 	}
 
@@ -1722,7 +1878,7 @@ button.accordion.active:after {
 .hero-button:hover span:after {
   opacity: 1;
   right: 0;
-}
+}*/
 }
 
 /*
