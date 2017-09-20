@@ -315,11 +315,11 @@ input[type=text]:focus {
 
 #hero-image{
     background-image: url("../images/mural.jpg");
-    height: 0;
-    padding-bottom: 48.25%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 100% auto;
+    height: 850px;
+    /*padding-bottom: 48.25%;*/
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
     position: relative;
 }
 
@@ -1273,29 +1273,30 @@ button.accordion.active:after {
 	#body-content{
 		padding: 0px;
 	}
+
+	#hero-image{
+    	padding-bottom: 70%;
+	}
 }	
 
 @media screen and (max-width: 912px) {
 
-	.column{
-		width: 100%;
+	/*#quick-nav h2{
+		font-size: 2em;	
+		line-height: .85em;
+	}*/
+
+	#quick-nav a{
+		font-size: .75em;
 	}
 
-	#quick-nav{
-		width: 100%;
-		margin: 0 auto;
-		padding: 0px 0px 40px 0px;
-		box-shadow: none;
-		transform: translate(0%, 0%);
+	#hero-image{
+    	padding-bottom: 70%;
 	}
 
-	.square{
-		display: block;
-		padding: 20px 20px 20px 20px;
-		box-shadow: none;
+	#hero-text p{
+		font-size: 1.25em;
 	}
-
-
 
 }
 /*	h1{
